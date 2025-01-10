@@ -1,3 +1,4 @@
+// Exercicio 3 com dados mockados
 // Fiz o arquivo dados.json mockado para facilitar a execução do código.
 const faturamentoMensal = [
   { "dia": 1, "valor": 22174.1664 },
@@ -52,7 +53,6 @@ function contarDiasAcimaDaMedia(faturamento, media) {
   return faturamento.filter(dia => dia.valor > media).length;
 }
 
-// Função principal
 function analisarFaturamento(faturamento) {
   const { menor, maior } = calcularExtremos(faturamento);
   const media = calcularMediaMensal(faturamento);
@@ -63,5 +63,4 @@ function analisarFaturamento(faturamento) {
   console.log("Número de dias com faturamento acima da média:", diasAcimaDaMedia);
 }
 
-// Executa a análise
 analisarFaturamento(faturamentoMensal);
