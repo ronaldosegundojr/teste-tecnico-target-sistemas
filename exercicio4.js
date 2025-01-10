@@ -20,7 +20,7 @@ function exibirPercentuaisDeFaturamento(faturamento) {
     console.log("Faturamento total: R$", totalFaturamento.toFixed(2));
     console.log("Percentual de representação por estado:");
     for (const [estado, percentual] of Object.entries(percentuais)) {
-        console.log(${estado}: ${percentual}%);
+        console.log(`${estado}: ${percentual}%`);
     }
 }
 
